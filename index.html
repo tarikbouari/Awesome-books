@@ -1,28 +1,39 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Awesome Books</title>
-</head>
-<body>
-    <h1>Awesome Books</h1>
-    <br>
-    <p> Lorm ipsum</p>
-    <p> Teste book</p>
-    <button> Remove</button>
-    <hr>
-    <p> Lorm ipsum</p>
-    <p> Teste book</p>
-    <button> Remove</button>
-    <hr>
-    <form action="" method="post" id="form">
-        <input type="text" placeholder="Title" id="title"><br><br>
-        <input type="text" placeholder="Author" id="author">
-        <button id="add" type="submit">Add</button> 
-        <span id="message"></span>
-    </form>
-    <script  src="data.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Awesome Books</title>
+    </head>
+    <body>
+        <h1>Awesome Books</h1>
+        <br>
+
+        <div id="container">
+            <div>
+                <p> Lorm ipsum</p>
+                <p> Teste book</p>
+                <button class="btn"> Remove</button>
+                <hr>
+            </div>
+
+            <div>
+                <p> Lorm ipsum</p>
+                <p> Teste book</p>
+                <button class="btn"> Remove</button>
+                <hr>
+            </div> 
+            <br>
+
+        </div>
+        <form action="" method="post" id="form">
+            <input type="text" placeholder="Title" id="title"><br><br>
+            <input type="text" placeholder="Author" id="author">
+            <button id="add" type="submit">Add</button>
+            <span id="message"></span>
+        </form>
+        <script src="data.js"></script>
+
+    </body>
 </html>
