@@ -58,4 +58,15 @@ btn.forEach((item) => {
         return item
       }
     });
-    
+    localStorage.setItem('userdata', JSON.stringify(output));
+    data = JSON.parse(getData);
+    data.forEach((item) => {
+      const initialize = ` <div class="undo"><p> ${item.title}</p>
+      <p>${item.author}</p>
+      <button class="btn" id="${item.id}">Remove</button> 
+      <hr></div> `;
+      container.innerHTML += initialize;
+      window.location.reload();
+    });
+  });
+});
