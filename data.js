@@ -27,7 +27,7 @@ form.addEventListener('submit', (e) => {
   const bookData = {
     title: title.value,
     author: author.value,
-    id: Date.now(),
+    id: Math.random() * 10
   };
 
   function addBook() {
@@ -54,8 +54,8 @@ btn.forEach((item) => {
     e.preventDefault();
     const currentBtn = e.currentTarget;
     const output = data.filter((item) => {
-      if (item.id != currentBtn.id) {
-        return item
+      if (item.id !== currentBtn.id) {
+        return item;
       }
     });
     localStorage.setItem('userdata', JSON.stringify(output));
