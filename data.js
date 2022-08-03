@@ -48,27 +48,3 @@ form.addEventListener('submit', (e) => {
   }
 });
 
-const btn = document.querySelectorAll('.btn');
-
-btn.forEach((item) => {
-  item.addEventListener('click', (e) => {
-    e.preventDefault();
-    const currentBtn = e.currentTarget;
-
-    const output = data.filter((item) => {
-      if (item.id != currentBtn.id) {
-        return item
-      }
-    });
-    localStorage.setItem('userdata', JSON.stringify(output));
-    data = JSON.parse(getData);
-    data.forEach((item) => {
-      const initialize = ` <div class="undo"><p> ${item.title}</p>
-      <p>${item.author}</p>
-      <button class="btn" id="${item.id}">Remove</button> 
-      <hr></div> `;
-      container.innerHTML += initialize;
-      window.location.reload();
-    });
-  });
-});
