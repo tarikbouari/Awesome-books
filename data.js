@@ -53,3 +53,9 @@ btn.forEach((item) => {
   item.addEventListener('click', (e) => {
     e.preventDefault();
     const currentBtn = e.currentTarget;
+    const output = data.filter((item) => {
+      if (item.id != currentBtn.id) {
+        return item
+      }
+    });
+    
