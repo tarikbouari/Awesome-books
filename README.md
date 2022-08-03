@@ -13,7 +13,7 @@
 -Following github flows standards.
 
 ## Live demo 
-[click here](https://tarikbouari.github.io/AfroTech-Festival/)
+[click here](#)
 
 ## Authors
 
