@@ -47,4 +47,9 @@ form.addEventListener('submit', (e) => {
     message.textContent = 'Title and Author are required';
   }
 });
+const btn = document.querySelectorAll('.btn');
 
+btn.forEach((item) => {
+  item.addEventListener('click', (e) => {
+    e.preventDefault();
+    const currentBtn = e.currentTarget;
