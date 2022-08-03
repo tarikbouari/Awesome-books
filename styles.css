@@ -1,8 +1,55 @@
 body {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: sans-serif;
 }
 
-h1, h3 {
+header {
+  display: flex;
+  border: 2px solid black;
+  padding: 10px 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  border: 2px solid black;
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.section {
+  display: none;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact ul {
+  list-style: none;
+}
+
+.active {
+  display: block;
+}
+
+h1,
+h3 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,9 +63,9 @@ h3 {
   font-size: 15px;
 }
 
-.container {
+.books-collection {
   border: 3px solid #363636;
-  width: 30%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -45,11 +92,6 @@ form {
   gap: 1%;
 }
 
-.addline {
-  display: flex;
-  align-items: flex-end; 
-}
-
 input[type='text'] {
   margin-bottom: 10px;
   border: 3px solid #363636;
@@ -61,4 +103,9 @@ input[type='text'] {
 
 .submit {
   box-shadow: 2px 3px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.date {
+  display: flex;
+  justify-content: flex-end;
 }
