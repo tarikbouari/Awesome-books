@@ -19,10 +19,15 @@ ul li {
   list-style: none;
 }
 
+.m-botton {
+  margin-bottom: 3rem;
+}
+
 /* header */
 header {
   background-color: #fff;
 }
+
 .head-container {
   display: flex;
   justify-content: space-between;
@@ -55,10 +60,11 @@ h3 {
   font-size: 15px;
 }
 
+
 .container {
-  border: 3px solid #363636;
-  width: 30%;
-  margin: 0 auto;
+  border: 3px solid #131045;
+  width: 100%;
+  margin-top: 2rem;
 }
 
 .class-book {
@@ -71,9 +77,22 @@ h3 {
   font-weight: 200;
 }
 
-.class-book:nth-child(odd) {
+.class-book:nth-child(even) {
   background: #ddd;
   padding: 1%;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem;
+  height: 60vh;
+}
+
+footer {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .center {
@@ -111,3 +130,4 @@ input[type='text'] {
   align-self: center;
   margin-left: 9%;
 }
+
