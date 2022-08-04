@@ -6,7 +6,8 @@ body {
   align-items: center;
 }
 
-h1, h3 {
+h1,
+h3 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -69,6 +70,7 @@ input[type='text'] {
 .submit {
   box-shadow: 2px 3px 2px 1px rgba(0, 0, 0, 0.2);
 }
+
 .add {
   cursor: pointer;
   width: fit-content;
