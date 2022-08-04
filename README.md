@@ -14,13 +14,11 @@
 
 ## Live demo 
 
-[click here](https://tarikbouari.github.io/AfroTech-Festival/)
-
-[click here](#)
+[click here](https://tarikbouari.github.io/Awesome-books/)
 
 ## Authors
 
-👤 **Tarik Bouari & Recillah Khamala **
+👤 ** Tarik Bouari & Recillah Khamala **
 
 - GitHub: [@tarikbouari](https://github.com/tarikbouari)
 - Twitter: [@tarikbouari](https://twitter.com/TarikBouari)
@@ -47,9 +45,6 @@ Give a ⭐️ if you like this project!
 - Icons resource: [Iconify](https://iconify.design/cons8)
 
 ## 📝 License
-
-
-This project is [MIT](./MIT.md) licensed..
 
 This project is [MIT](./MIT.md) licensed..
 
