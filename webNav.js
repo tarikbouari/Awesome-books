@@ -1,9 +1,12 @@
 const allSection = document.querySelectorAll('.section');
 const allLinks = document.querySelector('.nav-links');
 const year = document.querySelector('.date');
-
+// console.log (allSection)
+// console.log(allLinks)
+// console.log(year)
 allLinks.addEventListener('click', (e) => {
   const clicked = e.target;
+  // console.log(clicked)
   if (!clicked.classList.contains('link')) return;
   allSection.forEach((section) => {
     section.classList.remove('active');
@@ -26,4 +29,4 @@ const options = {
 const today = new Date();
 const locale = navigator.language;
 
-year.textContent = today.toLocaleDateString('en-US', options, locale);
+year.textContent = today.toLocaleDateString('en-US', options, locale)

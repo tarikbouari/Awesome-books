@@ -6,6 +6,10 @@ body {
   display: none;
 }
 
+.active {
+  display: block;
+}
+
 h1 {
   display: flex;
   align-items: center;
