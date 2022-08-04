@@ -178,11 +178,13 @@ form button {
   border: none;
   border-radius: 5px;
 }
+
 .contact-div ul {
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
 }
+
 .contact-div {
   display: flex;
   flex-direction: column;
@@ -190,4 +192,8 @@ form button {
   width: 70%;
   margin: 0 auto;
   padding: 2rem 8rem;
+}
+
+.date {
+  color: #131045;
 }
