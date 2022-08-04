@@ -10,10 +10,11 @@
 </head>
 
 <body>
-    <header class=" m-botton">
+    <header class=" ">
         <div class="head-container">
             <div class="logo">
-                <a href="#">Awesome Books</a>
+                <img src="images/closed-book.svg" alt="logo" class="logo-svg">
+                <span class="logo-span"> <a href="#">Awesome Books</a></span>
             </div>
             <nav>
                 <ul class="nav-links">
@@ -31,8 +32,14 @@
         </div>   
     </header>
     <section class="banner"> 
+        <div class="banner-text">
+            <h1>Build your library</h1>
+            <br>
+            <p> add book to your collection </p>
+        </div>
+        <img src="images/reader.svg" alt="reader">
     </section>
-    <main class="m-botton">
+    <main class="">
     <section class="books section section-1 active" id="list-section">
         <h1>All Awesome Books</h1>
 
@@ -46,23 +53,29 @@
             <form action="#" method="post" id="form">
                 <input type="text" placeholder="Title" id="title"> <br>
                 <input type="text" placeholder="Author" id="author">
+                <button id="add" class="add" type="submit">Add</button>
             </form>
-            <button id="add" class="add" type="submit">Add</button>
+            
             <span id="message"></span>
             <div></div>
         </div>
     </section>
     <section class="contact section section-3" id="contact-section">
         <h1>Contact Information</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita temporibus ipsam eius.</p>
-        <div><strong>.   </strong>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
-        <div><strong>.   </strong>Lorem ipsum dolor sit amet.</div>
-        <div><strong>.   </strong>Lorem ipsum dolor, sit amet consectetur!</div>
+        <div class="contact-div">
+        <h3 >Do you have any question or just want to say hello? You can reach out to us :</h3>
+       <ul>
+        <li> <b>Our email:</b> <a href="@maito">aweseomebook@gmail.com </a></li>
+        <li><b>Our phone number:</b> +233 04453456</li>
+        <li><b>Our adress :</b> Kenya and  Ghana</li>
+       </ul>
+        </div>
+       
     </section>
     </main>
     <footer>
-        <div class="date"></div>
-        <h2>Copyright 2022</h2>
+        <div class="date m-botton2"></div>
+       <h3>Awesome books &copy; 2022</h3>
     </footer>
     <script src="/library.js"></script>
     <script src="/webNav.js"></script>

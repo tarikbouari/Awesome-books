@@ -15,22 +15,28 @@ class Book {
   loadBooks() {
     this.data = JSON.parse(localStorage.getItem('form')) || [];
     container.innerHTML = '';
-    if (!this.data) return;
-    this.data.forEach((item) => {
+    if (!this.data){
       const singleBook = document.createElement('div');
-      singleBook.classList.add('class-book');
-      const p = document.createElement('p');
-      p.textContent = `"${item.title}" by ${item.author}`;
-      const bton = document.createElement('button');
-      bton.textContent = 'Remove';
-      bton.classList.add('remove');
-      bton.setAttribute('id', item.id);
-      singleBook.appendChild(p);
-      singleBook.appendChild(bton);
+      singleBook.textContent = "Add book to your collection";
       container.appendChild(singleBook);
-    });
-  }
+    } else if (this.data) {
+      this.data.forEach((item) => {
+        const singleBook = document.createElement('div');
+        singleBook.classList.add('class-book');
+        const p = document.createElement('p');
+        p.textContent = `${item.title} by ${item.author}`;
+        const bton = document.createElement('button');
+        bton.textContent = 'Remove';
+        bton.classList.add('remove');
+        bton.setAttribute('id', item.id);
+        singleBook.appendChild(p);
+        singleBook.appendChild(bton);
+         container.appendChild(singleBook);
+      });
+  
+    }
 
+  }
   addBook() {
     this.data = JSON.parse(localStorage.getItem('form')) || [];
     const book = {
