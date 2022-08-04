@@ -29,4 +29,4 @@ const options = {
 const today = new Date();
 const locale = navigator.language;
 
-year.textContent = today.toLocaleDateString('en-US', options, locale)
+year.textContent = today.toLocaleDateString('en-US', options, locale);

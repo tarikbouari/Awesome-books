@@ -15,9 +15,9 @@ class Book {
   loadBooks() {
     this.data = JSON.parse(localStorage.getItem('form')) || [];
     container.innerHTML = '';
-    if (!this.data){
+    if (!this.data) {
       const singleBook = document.createElement('div');
-      singleBook.textContent = "Add book to your collection";
+      singleBook.textContent = 'Add book to your collection';
       container.appendChild(singleBook);
     } else if (this.data) {
       this.data.forEach((item) => {
@@ -31,12 +31,11 @@ class Book {
         bton.setAttribute('id', item.id);
         singleBook.appendChild(p);
         singleBook.appendChild(bton);
-         container.appendChild(singleBook);
+        container.appendChild(singleBook);
       });
-  
     }
-
   }
+
   addBook() {
     this.data = JSON.parse(localStorage.getItem('form')) || [];
     const book = {
