@@ -2,6 +2,10 @@ body {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.section {
+  align-items: center;
+}
+
 h1, h3 {
   display: flex;
   align-items: center;
@@ -37,22 +41,25 @@ h3 {
   padding: 1%;
 }
 
-form {
+.center {
+  /* width: 15%; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1%;
 }
 
-.addline {
-  display: flex;
-  align-items: flex-end; 
+form {
+  gap: 1%;
+  align-items: center;
 }
 
 input[type='text'] {
-  margin-bottom: 10px;
+  /* width: calc(100% - 10px); */
+  padding: 0 0 0 10px;
   border: 3px solid #363636;
+  margin-bottom: 10px;
+  align-self: center;
 }
 
 .remove {
@@ -61,4 +68,10 @@ input[type='text'] {
 
 .submit {
   box-shadow: 2px 3px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.add {
+  cursor: pointer;
+  width: fit-content;
+  align-self: center;
+  margin-left: 9%;
 }
