@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <title>Awesome Books</title>
-    </head>
-    <body>
-        
-        <h1>Awesome Books</h1>
-        <br>
 
-        <div id="container">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Awesome Books</title>
+</head>
+
+<body>
+    <section class="section">
+        <h1>All Awesome Books</h1>
+
+        <div id="container" class="container">
+
+            <div class="line">line</div>
 
         </div>
-        <form action="#" method="post" id="form">
-            <input type="text" placeholder="Title" id="title"><br><br>
-            <input type="text" placeholder="Author" id="author">
-            <button id="add" type="submit">Add</button>
+        <div class="center">
+            <h3>Add a new book</h3>
+            <form action="#" method="post" id="form">
+                <input type="text" placeholder="Title" id="title"> <br>
+                <input type="text" placeholder="Author" id="author">
+            </form>
+            <button id="add" class="add" type="submit">Add</button>
             <span id="message"></span>
-        </form>
-        <script src="data.js"></script>
+            <div></div>
+        </div>
+    </section>
+    <script src="library.js"></script>
+</body>
 
-    </body>
 </html>
