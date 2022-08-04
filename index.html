@@ -10,16 +10,34 @@
 </head>
 
 <body>
-    <section class="section">
+    <header>
+        <div class="logo">
+            <a href="#">Awesome Books</a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#" data-link="1" class="link list-link">List</a></li>
+                <li>|</li>
+                <li>
+                    <a href="#" data-link="2" class="link book-link">Add Books</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="#" data-link="3" class="link contact-link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="date"></div>
+    <section class="books section section-1 active">
         <h1>All Awesome Books</h1>
 
         <div id="container" class="container">
-
-            <div class="line">line</div>
-
         </div>
+    </section>
+    <section class="add-book section section-2">
         <div class="center">
-            <h3>Add a new book</h3>
+            <h1>Add a new book</h1>
             <form action="#" method="post" id="form">
                 <input type="text" placeholder="Title" id="title"> <br>
                 <input type="text" placeholder="Author" id="author">
@@ -29,6 +47,16 @@
             <div></div>
         </div>
     </section>
+    <section class="contact section section-3">
+        <h1>Contact Information</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita temporibus ipsam eius exercitatdje autem alias deserunt nam illo quos a.</p>
+        <div><strong>.   </strong>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div><strong>.   </strong>Lorem ipsum dolor sit amet.</div>
+        <div><strong>.   </strong>Lorem ipsum dolor, sit amet consectetur!</div>
+    </section>
+    <footer>
+        <h2>Copyright 2022</h2>
+    </footer>
     <script src="library.js"></script>
 </body>
 
